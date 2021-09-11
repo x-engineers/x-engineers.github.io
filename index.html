@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>X-Engineers Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          X - Engineers
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background"></div>
+          <div class="img-text-wrapper">
+            <div class="nav-link-wrapper a">
+              <a href="https://github.com/x-engineers/java-maven-automation.git">Java Maven Automation
+                <p>This project contains the basic principles of test automation and has been developed using the Page Object Model (POM) architecture with Selenium Java.</p></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
